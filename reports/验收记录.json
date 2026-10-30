@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-27",
+  "python": "3.12.2",
+  "mcp_sdk": "2.3.0",
+  "core_python_files": 9,
+  "core_physical_lines": 742,
+  "index": {
+    "shape": [
+      22,
+      1024
+    ],
+    "finite": true,
+    "manifest": {
+      "model": "qwen3.7-text-embedding-flash",
+      "service_hash": "5891aed827c4",
+      "corpus_hash": "1b3bd9f92ef2d202767fa1cf0c4834128ec6055a19907f94353770ad5811102e",
+      "chunk_size": 450,
+      "overlap": 70,
+      "documents": 8,
+      "chunks": 22,
+      "dimensions": 1024,
+      "build_seconds": 2.337
+    }
+  },
+  "checks": {
+    "core_unit_tests": {
+      "passed": 14,
+      "external_models_mocked": true
+    },
+    "real_mcp_tests": {
+      "passed": 3,
+      "transport": "stdio",
+      "protocol": "2025-11-25"
+    },
+    "streamlit_interaction_tests": {
+      "passed": 2,
+      "real_app_code": true,
+      "generation_disabled": true,
+      "notes": "只读验收进程预先分配框架临时目录；没有模拟页面组件、检索或MCP调用。"
+    },
+    "total_passed": 19,
+    "dependency_check": "All installed packages are compatible"
+  },
+  "real_generation": {
+    "calls": 5,
+    "notes": "三方法同题3次；问题发现1次；补充工具边界后同题复测1次。不是全量答案准确率。"
+  },
+  "browser_screenshot": {
+    "verified": false,
+    "reason": "Browser插件缺少browser-service.mjs；未生成截图。"
+  },
+  "scope_notes": [
+    "真实Embedding计算和本地索引持久化在不同权限进程分阶段验证。",
+    "未执行浏览器上传文件再点击云端建库的完整链路；文件保存与索引完整保存路径有离线回归。",
+    "没有生产并发、独立业务集、完整生成准确率或拒答率。"
+  ],
+  "code_sha256": {
+    "app.py": "66813c0f8244e21e5a3121e464ed20b20824ba6bdd531a957af8d0f7ece83d4f",
+    "documents.py": "54b600c6759379649a0c7d7bd8dec0b61a070acbd89bff64ef522cab253010f2",
+    "evaluate.py": "cd2a889433ab58205e6ac165910905c672f55e845500b1e10c2e0039bd266d5d",
+    "mcp_client.py": "890e19fcc1b704249456c72e22a4776cfec7c0c917db3f3ae2fbbf92f79fe339",
+    "mcp_server.py": "33cd416d27bf95737d73cf53992334e7bc9a8fa8f103412b0c591d2ed5438ba0",
+    "prices.py": "f9553690528711505afde77bcdeba5830a60f3e0003b96262789dd0fc437160b",
+    "qa.py": "494f509508872222b7544a759ed0e1166fe3a811239abb90ce78f66495602a90",
+    "retrieval.py": "04884de0e59132bb11b3c429f9130400bfc067951780740028ebc3459d0a7adb",
+    "settings.py": "cc28629273d5ca69fc9bf16ac86aad8dce527b2b6010d92c063d29a5964c365a"
+  }
+}

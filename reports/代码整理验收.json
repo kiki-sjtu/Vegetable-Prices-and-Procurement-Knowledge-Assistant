@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-27",
+  "core_files": 9,
+  "test_files": 2,
+  "all_code_in_src": true,
+  "code_overview_files": 11,
+  "staged_regression_tests_passed": 19,
+  "desktop_hashes_match_tested_stage": true,
+  "desktop_configuration_and_bm25": "passed",
+  "markdown_links": "passed",
+  "source_sha256": {
+    "src\\app.py": "e8cc3d300234d0b4bb8c91bad085b8c93e2f22c099f8875e1831e605ddeb6786",
+    "src\\documents.py": "c1af746a3cea9554b48332121572a07fb192dc06e0eb865ecfbd70b03e634ec3",
+    "src\\evaluate.py": "3b6ec6108a817fec1c5351175ebea29ad4c7fb32f546af8f2247c62eb871cba0",
+    "src\\mcp_client.py": "9b42844d80e64d39223ce749f5ebcd63873b0fac4a2a787947e91ae1f356077e",
+    "src\\mcp_server.py": "d902d4b9ec46c69057f752486f17a3befed5f6ec75183ffaab65767dd357c665",
+    "src\\prices.py": "be56e53fe360fde7b6f6bb5ee8e194461105a936b93f469ad48c5ae956bb8aa4",
+    "src\\qa.py": "fb59ae4f9992e3e22d2cbd28e756c79e6c758cf7adeb3b04ceb95f16b5267878",
+    "src\\retrieval.py": "c72fd1d8202da349471b8678066df33c0829ec995a6b6febdbcb03a1dcfb4652",
+    "src\\settings.py": "1f4c39afce7698da2becfdd34c6d98ea24585858b41fe8bbcd0b4a71c302112f",
+    "src\\tests\\test_core.py": "1d6d1899059d85d06666bdadbf41078c865ea2d2fd1fe6ffeb2580528d0b5eda",
+    "src\\tests\\test_mcp_ui.py": "217543ba82dcf83a5a2d0d6f9d66bc8f4add384bdac24352d812970b95b5f3dc"
+  },
+  "desktop_real_mcp": "passed",
+  "code_overview_secret_scan": "passed"
+}

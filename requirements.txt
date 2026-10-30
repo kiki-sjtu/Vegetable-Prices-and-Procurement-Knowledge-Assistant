@@ -1,0 +1,6 @@
+streamlit==1.66.0
+numpy==2.5.4
+httpx==0.28.1
+python-dotenv==1.2.4
+pypdf==6.20.1
+mcp==2.3.0

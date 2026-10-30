@@ -1,0 +1,2963 @@
+{
+  "created_at": "2026-10-27T03:53:12.454460+00:00",
+  "python": "3.12.2",
+  "index": {
+    "model": "qwen3.7-text-embedding-flash",
+    "service_hash": "5891aed827c4",
+    "corpus_hash": "1b3bd9f92ef2d202767fa1cf0c4834128ec6055a19907f94353770ad5811102e",
+    "chunk_size": 450,
+    "overlap": 70,
+    "documents": 8,
+    "chunks": 22,
+    "dimensions": 1024,
+    "build_seconds": 2.337
+  },
+  "repeats": 1,
+  "summary": [
+    {
+      "split": "dev",
+      "method": "bm25",
+      "questions": 6,
+      "answerable_questions": 6,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "p50_ms": 0.25,
+      "p95_ms": 0.52
+    },
+    {
+      "split": "dev",
+      "method": "vector",
+      "questions": 6,
+      "answerable_questions": 6,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "p50_ms": 711.46,
+      "p95_ms": 16442.13
+    },
+    {
+      "split": "dev",
+      "method": "hybrid",
+      "questions": 6,
+      "answerable_questions": 6,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "p50_ms": 724.92,
+      "p95_ms": 944.28
+    },
+    {
+      "split": "test",
+      "method": "bm25",
+      "questions": 24,
+      "answerable_questions": 20,
+      "hit_at_3": 0.9,
+      "recall_at_3": 0.875,
+      "mrr_at_3": 0.85,
+      "p50_ms": 0.29,
+      "p95_ms": 0.52
+    },
+    {
+      "split": "test",
+      "method": "vector",
+      "questions": 24,
+      "answerable_questions": 20,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 0.95,
+      "p50_ms": 563.93,
+      "p95_ms": 693.96
+    },
+    {
+      "split": "test",
+      "method": "hybrid",
+      "questions": 24,
+      "answerable_questions": 20,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 0.975,
+      "p50_ms": 579.57,
+      "p95_ms": 732.92
+    }
+  ],
+  "runs": [
+    {
+      "id": "dev-01",
+      "split": "dev",
+      "repeat": 0,
+      "question": "净重和毛重有什么区别？",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.0005621000018436462,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cedd925ae42",
+          "source": "01_到货验收.md",
+          "section": "净重与去皮",
+          "score": 8.88688
+        },
+        {
+          "id": "C05ed072652",
+          "source": "01_到货验收.md",
+          "section": "批次与追溯",
+          "score": 6.006052
+        },
+        {
+          "id": "C96ee932ed4",
+          "source": "02_报价与单位.md",
+          "section": "价格口径对齐",
+          "score": 1.976199
+        }
+      ]
+    },
+    {
+      "id": "dev-01",
+      "split": "dev",
+      "repeat": 0,
+      "question": "净重和毛重有什么区别？",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 21.681148799994844,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cedd925ae42",
+          "source": "01_到货验收.md",
+          "section": "净重与去皮",
+          "score": 0.71261
+        },
+        {
+          "id": "C96ee932ed4",
+          "source": "02_报价与单位.md",
+          "section": "价格口径对齐",
+          "score": 0.508345
+        },
+        {
+          "id": "Cf6295d12f5",
+          "source": "01_到货验收.md",
+          "section": "验收记录",
+          "score": 0.500851
+        }
+      ]
+    },
+    {
+      "id": "dev-01",
+      "split": "dev",
+      "repeat": 0,
+      "question": "净重和毛重有什么区别？",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 0.697259499997017,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cedd925ae42",
+          "source": "01_到货验收.md",
+          "section": "净重与去皮",
+          "score": 0.032787
+        },
+        {
+          "id": "C96ee932ed4",
+          "source": "02_报价与单位.md",
+          "section": "价格口径对齐",
+          "score": 0.032002
+        },
+        {
+          "id": "C05ed072652",
+          "source": "01_到货验收.md",
+          "section": "批次与追溯",
+          "score": 0.031514
+        }
+      ]
+    },
+    {
+      "id": "dev-02",
+      "split": "dev",
+      "repeat": 0,
+      "question": "2.40元每500克换成每公斤多少钱？",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 0.7178068999928655,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C96ee932ed4",
+          "source": "02_报价与单位.md",
+          "section": "价格口径对齐",
+          "score": 0.67165
+        },
+        {
+          "id": "Cc34d3fd4ea",
+          "source": "03_库存与周转.md",
+          "section": "损耗率与采购量",
+          "score": 0.44563
+        },
+        {
+          "id": "Cedd925ae42",
+          "source": "01_到货验收.md",
+          "section": "净重与去皮",
+          "score": 0.443979
+        }
+      ]
+    },
+    {
+      "id": "dev-02",
+      "split": "dev",
+      "repeat": 0,
+      "question": "2.40元每500克换成每公斤多少钱？",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 0.9913607000053162,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C96ee932ed4",
+          "source": "02_报价与单位.md",
+          "section": "价格口径对齐",
+          "score": 0.032787
+        },
+        {
+          "id": "Cc34d3fd4ea",
+          "source": "03_库存与周转.md",
+          "section": "损耗率与采购量",
+          "score": 0.032002
+        },
+        {
+          "id": "Cd8837bcfb8",
+          "source": "04_供应商比较.md",
+          "section": "示例评分规则",
+          "score": 0.031281
+        }
+      ]
+    },
+    {
+      "id": "dev-02",
+      "split": "dev",
+      "repeat": 0,
+      "question": "2.40元每500克换成每公斤多少钱？",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.0002249000099254772,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C96ee932ed4",
+          "source": "02_报价与单位.md",
+          "section": "价格口径对齐",
+          "score": 13.609346
+        },
+        {
+          "id": "Cd8837bcfb8",
+          "source": "04_供应商比较.md",
+          "section": "示例评分规则",
+          "score": 4.956823
+        },
+        {
+          "id": "Cc34d3fd4ea",
+          "source": "03_库存与周转.md",
+          "section": "损耗率与采购量",
+          "score": 4.237978
+        }
+      ]
+    },
+    {
+      "id": "dev-03",
+      "split": "dev",
+      "repeat": 0,
+      "question": "仓库里不同批次先处理哪一批？",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 0.7525860000023386,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C7820e43437",
+          "source": "03_库存与周转.md",
+          "section": "批次周转约定",
+          "score": 0.032787
+        },
+        {
+          "id": "C05ed072652",
+          "source": "01_到货验收.md",
+          "section": "批次与追溯",
+          "score": 0.032258
+        },
+        {
+          "id": "C7dd9b78689",
+          "source": "04_供应商比较.md",
+          "section": "缺项处理",
+          "score": 0.03009
+        }
+      ]
+    },
+    {
+      "id": "dev-03",
+      "split": "dev",
+      "repeat": 0,
+      "question": "仓库里不同批次先处理哪一批？",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.00021430000197142363,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C7820e43437",
+          "source": "03_库存与周转.md",
+          "section": "批次周转约定",
+          "score": 9.757368
+        },
+        {
+          "id": "C05ed072652",
+          "source": "01_到货验收.md",
+          "section": "批次与追溯",
+          "score": 7.372863
+        },
+        {
+          "id": "Cef58368689",
+          "source": "02_报价与单位.md",
+          "section": "费用拆分",
+          "score": 2.041688
+        }
+      ]
+    },
+    {
+      "id": "dev-03",
+      "split": "dev",
+      "repeat": 0,
+      "question": "仓库里不同批次先处理哪一批？",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 0.44676690000051167,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C7820e43437",
+          "source": "03_库存与周转.md",
+          "section": "批次周转约定",
+          "score": 0.61905
+        },
+        {
+          "id": "C05ed072652",
+          "source": "01_到货验收.md",
+          "section": "批次与追溯",
+          "score": 0.522768
+        },
+        {
+          "id": "C70c02ffa7a",
+          "source": "01_到货验收.md",
+          "section": "异常与退货",
+          "score": 0.450295
+        }
+      ]
+    },
+    {
+      "id": "dev-04",
+      "split": "dev",
+      "repeat": 0,
+      "question": "示例供应商综合评分的权重是什么？",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.0002527999895391986,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cd8837bcfb8",
+          "source": "04_供应商比较.md",
+          "section": "示例评分规则",
+          "score": 10.956828
+        },
+        {
+          "id": "C7dd9b78689",
+          "source": "04_供应商比较.md",
+          "section": "缺项处理",
+          "score": 5.431053
+        },
+        {
+          "id": "Caa0c7bf857",
+          "source": "05_报价单与异常.md",
+          "section": "报价单字段",
+          "score": 4.249176
+        }
+      ]
+    },
+    {
+      "id": "dev-04",
+      "split": "dev",
+      "repeat": 0,
+      "question": "示例供应商综合评分的权重是什么？",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 0.5552261999982875,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cd8837bcfb8",
+          "source": "04_供应商比较.md",
+          "section": "示例评分规则",
+          "score": 0.674263
+        },
+        {
+          "id": "C7dd9b78689",
+          "source": "04_供应商比较.md",
+          "section": "缺项处理",
+          "score": 0.488223
+        },
+        {
+          "id": "C7e0665fffe",
+          "source": "00_项目范围.md",
+          "section": "教学数据声明",
+          "score": 0.470474
+        }
+      ]
+    },
+    {
+      "id": "dev-04",
+      "split": "dev",
+      "repeat": 0,
+      "question": "示例供应商综合评分的权重是什么？",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 0.8030532999982825,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cd8837bcfb8",
+          "source": "04_供应商比较.md",
+          "section": "示例评分规则",
+          "score": 0.032787
+        },
+        {
+          "id": "C7dd9b78689",
+          "source": "04_供应商比较.md",
+          "section": "缺项处理",
+          "score": 0.032258
+        },
+        {
+          "id": "C7e0665fffe",
+          "source": "00_项目范围.md",
+          "section": "教学数据声明",
+          "score": 0.031498
+        }
+      ]
+    },
+    {
+      "id": "dev-05",
+      "split": "dev",
+      "repeat": 0,
+      "question": "最新有记录日期是什么意思？",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 0.7250915999902645,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cb6d3fff173",
+          "source": "00_项目范围.md",
+          "section": "最新记录不等于今天",
+          "score": 0.693103
+        },
+        {
+          "id": "C286d7537ed",
+          "source": "02_报价与单位.md",
+          "section": "日期与行情边界",
+          "score": 0.510484
+        },
+        {
+          "id": "C86f2fd7304",
+          "source": "00_项目范围.md",
+          "section": "文档与价格分工",
+          "score": 0.43004
+        }
+      ]
+    },
+    {
+      "id": "dev-05",
+      "split": "dev",
+      "repeat": 0,
+      "question": "最新有记录日期是什么意思？",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 0.6108205000055023,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cb6d3fff173",
+          "source": "00_项目范围.md",
+          "section": "最新记录不等于今天",
+          "score": 0.032787
+        },
+        {
+          "id": "C286d7537ed",
+          "source": "02_报价与单位.md",
+          "section": "日期与行情边界",
+          "score": 0.032258
+        },
+        {
+          "id": "C86f2fd7304",
+          "source": "00_项目范围.md",
+          "section": "文档与价格分工",
+          "score": 0.031258
+        }
+      ]
+    },
+    {
+      "id": "dev-05",
+      "split": "dev",
+      "repeat": 0,
+      "question": "最新有记录日期是什么意思？",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.00025179999647662044,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cb6d3fff173",
+          "source": "00_项目范围.md",
+          "section": "最新记录不等于今天",
+          "score": 15.486471
+        },
+        {
+          "id": "C286d7537ed",
+          "source": "02_报价与单位.md",
+          "section": "日期与行情边界",
+          "score": 2.433843
+        },
+        {
+          "id": "Caa0c7bf857",
+          "source": "05_报价单与异常.md",
+          "section": "报价单字段",
+          "score": 2.318711
+        }
+      ]
+    },
+    {
+      "id": "dev-06",
+      "split": "dev",
+      "repeat": 0,
+      "question": "报价单要记录哪些内容？",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 0.6049330999958329,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Caa0c7bf857",
+          "source": "05_报价单与异常.md",
+          "section": "报价单字段",
+          "score": 0.032787
+        },
+        {
+          "id": "Cf6295d12f5",
+          "source": "01_到货验收.md",
+          "section": "验收记录",
+          "score": 0.031746
+        },
+        {
+          "id": "Cef58368689",
+          "source": "02_报价与单位.md",
+          "section": "费用拆分",
+          "score": 0.031514
+        }
+      ]
+    },
+    {
+      "id": "dev-06",
+      "split": "dev",
+      "repeat": 0,
+      "question": "报价单要记录哪些内容？",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.0003966999938711524,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Caa0c7bf857",
+          "source": "05_报价单与异常.md",
+          "section": "报价单字段",
+          "score": 6.485959
+        },
+        {
+          "id": "C71ef3bb834",
+          "source": "06_演示收货补充.txt",
+          "section": "06_演示收货补充",
+          "score": 2.701229
+        },
+        {
+          "id": "Cf6295d12f5",
+          "source": "01_到货验收.md",
+          "section": "验收记录",
+          "score": 1.637581
+        }
+      ]
+    },
+    {
+      "id": "dev-06",
+      "split": "dev",
+      "repeat": 0,
+      "question": "报价单要记录哪些内容？",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 0.7051094999915222,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Caa0c7bf857",
+          "source": "05_报价单与异常.md",
+          "section": "报价单字段",
+          "score": 0.69126
+        },
+        {
+          "id": "Cef58368689",
+          "source": "02_报价与单位.md",
+          "section": "费用拆分",
+          "score": 0.530175
+        },
+        {
+          "id": "Cf6295d12f5",
+          "source": "01_到货验收.md",
+          "section": "验收记录",
+          "score": 0.520336
+        }
+      ]
+    },
+    {
+      "id": "test-01",
+      "split": "test",
+      "repeat": 0,
+      "question": "连筐共12公斤，空筐2公斤，计价应该用多少重量？",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.000345499996910803,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cedd925ae42",
+          "source": "01_到货验收.md",
+          "section": "净重与去皮",
+          "score": 11.542464
+        },
+        {
+          "id": "C96ee932ed4",
+          "source": "02_报价与单位.md",
+          "section": "价格口径对齐",
+          "score": 4.856575
+        },
+        {
+          "id": "Cc34d3fd4ea",
+          "source": "03_库存与周转.md",
+          "section": "损耗率与采购量",
+          "score": 4.652301
+        }
+      ]
+    },
+    {
+      "id": "test-01",
+      "split": "test",
+      "repeat": 0,
+      "question": "连筐共12公斤，空筐2公斤，计价应该用多少重量？",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 0.6204218000057153,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cedd925ae42",
+          "source": "01_到货验收.md",
+          "section": "净重与去皮",
+          "score": 0.651297
+        },
+        {
+          "id": "C96ee932ed4",
+          "source": "02_报价与单位.md",
+          "section": "价格口径对齐",
+          "score": 0.586562
+        },
+        {
+          "id": "Cc34d3fd4ea",
+          "source": "03_库存与周转.md",
+          "section": "损耗率与采购量",
+          "score": 0.522122
+        }
+      ]
+    },
+    {
+      "id": "test-01",
+      "split": "test",
+      "repeat": 0,
+      "question": "连筐共12公斤，空筐2公斤，计价应该用多少重量？",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 0.5012358999956632,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cedd925ae42",
+          "source": "01_到货验收.md",
+          "section": "净重与去皮",
+          "score": 0.032787
+        },
+        {
+          "id": "C96ee932ed4",
+          "source": "02_报价与单位.md",
+          "section": "价格口径对齐",
+          "score": 0.032258
+        },
+        {
+          "id": "Cc34d3fd4ea",
+          "source": "03_库存与周转.md",
+          "section": "损耗率与采购量",
+          "score": 0.031746
+        }
+      ]
+    },
+    {
+      "id": "test-02",
+      "split": "test",
+      "repeat": 0,
+      "question": "同样的菜上午下午各送一次，批次能不能合并？",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 0.5543155000050319,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C05ed072652",
+          "source": "01_到货验收.md",
+          "section": "批次与追溯",
+          "score": 0.509655
+        },
+        {
+          "id": "C7820e43437",
+          "source": "03_库存与周转.md",
+          "section": "批次周转约定",
+          "score": 0.49594
+        },
+        {
+          "id": "Cb6291533aa",
+          "source": "03_库存与周转.md",
+          "section": "避免重复采购",
+          "score": 0.441496
+        }
+      ]
+    },
+    {
+      "id": "test-02",
+      "split": "test",
+      "repeat": 0,
+      "question": "同样的菜上午下午各送一次，批次能不能合并？",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 21.55031289999897,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C05ed072652",
+          "source": "01_到货验收.md",
+          "section": "批次与追溯",
+          "score": 0.032787
+        },
+        {
+          "id": "C7820e43437",
+          "source": "03_库存与周转.md",
+          "section": "批次周转约定",
+          "score": 0.032258
+        },
+        {
+          "id": "Cb6291533aa",
+          "source": "03_库存与周转.md",
+          "section": "避免重复采购",
+          "score": 0.031498
+        }
+      ]
+    },
+    {
+      "id": "test-02",
+      "split": "test",
+      "repeat": 0,
+      "question": "同样的菜上午下午各送一次，批次能不能合并？",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.00031820000731386244,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C05ed072652",
+          "source": "01_到货验收.md",
+          "section": "批次与追溯",
+          "score": 2.856096
+        },
+        {
+          "id": "C7820e43437",
+          "source": "03_库存与周转.md",
+          "section": "批次周转约定",
+          "score": 2.833599
+        },
+        {
+          "id": "Cf6295d12f5",
+          "source": "01_到货验收.md",
+          "section": "验收记录",
+          "score": 1.6682
+        }
+      ]
+    },
+    {
+      "id": "test-03",
+      "split": "test",
+      "repeat": 0,
+      "question": "少送货或规格不符合约定时，收货员应怎么做？",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 0.5817265999939991,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C70c02ffa7a",
+          "source": "01_到货验收.md",
+          "section": "异常与退货",
+          "score": 0.032787
+        },
+        {
+          "id": "C71ef3bb834",
+          "source": "06_演示收货补充.txt",
+          "section": "06_演示收货补充",
+          "score": 0.032002
+        },
+        {
+          "id": "Cf6295d12f5",
+          "source": "01_到货验收.md",
+          "section": "验收记录",
+          "score": 0.03125
+        }
+      ]
+    },
+    {
+      "id": "test-03",
+      "split": "test",
+      "repeat": 0,
+      "question": "少送货或规格不符合约定时，收货员应怎么做？",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.0005433999904198572,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C70c02ffa7a",
+          "source": "01_到货验收.md",
+          "section": "异常与退货",
+          "score": 10.6774
+        },
+        {
+          "id": "C7ddbf7ff17",
+          "source": "02_报价与单位.md",
+          "section": "缺失价格与替代",
+          "score": 6.837261
+        },
+        {
+          "id": "C71ef3bb834",
+          "source": "06_演示收货补充.txt",
+          "section": "06_演示收货补充",
+          "score": 3.327819
+        }
+      ]
+    },
+    {
+      "id": "test-03",
+      "split": "test",
+      "repeat": 0,
+      "question": "少送货或规格不符合约定时，收货员应怎么做？",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 0.6445558999985224,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C70c02ffa7a",
+          "source": "01_到货验收.md",
+          "section": "异常与退货",
+          "score": 0.626181
+        },
+        {
+          "id": "C71ef3bb834",
+          "source": "06_演示收货补充.txt",
+          "section": "06_演示收货补充",
+          "score": 0.510879
+        },
+        {
+          "id": "Cecc157c2bc",
+          "source": "04_供应商比较.md",
+          "section": "最低单价的局限",
+          "score": 0.508461
+        }
+      ]
+    },
+    {
+      "id": "test-04",
+      "split": "test",
+      "repeat": 0,
+      "question": "送货单上的数量和实收数量应该怎样保存？",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.0003935999993700534,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cf6295d12f5",
+          "source": "01_到货验收.md",
+          "section": "验收记录",
+          "score": 22.455572
+        },
+        {
+          "id": "C70c02ffa7a",
+          "source": "01_到货验收.md",
+          "section": "异常与退货",
+          "score": 10.694424
+        },
+        {
+          "id": "C86f2fd7304",
+          "source": "00_项目范围.md",
+          "section": "文档与价格分工",
+          "score": 4.331564
+        }
+      ]
+    },
+    {
+      "id": "test-04",
+      "split": "test",
+      "repeat": 0,
+      "question": "送货单上的数量和实收数量应该怎样保存？",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 0.5095135000010487,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cf6295d12f5",
+          "source": "01_到货验收.md",
+          "section": "验收记录",
+          "score": 0.711982
+        },
+        {
+          "id": "C70c02ffa7a",
+          "source": "01_到货验收.md",
+          "section": "异常与退货",
+          "score": 0.643873
+        },
+        {
+          "id": "C05ed072652",
+          "source": "01_到货验收.md",
+          "section": "批次与追溯",
+          "score": 0.527526
+        }
+      ]
+    },
+    {
+      "id": "test-04",
+      "split": "test",
+      "repeat": 0,
+      "question": "送货单上的数量和实收数量应该怎样保存？",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 0.504069199989317,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cf6295d12f5",
+          "source": "01_到货验收.md",
+          "section": "验收记录",
+          "score": 0.032787
+        },
+        {
+          "id": "C70c02ffa7a",
+          "source": "01_到货验收.md",
+          "section": "异常与退货",
+          "score": 0.032258
+        },
+        {
+          "id": "C05ed072652",
+          "source": "01_到货验收.md",
+          "section": "批次与追溯",
+          "score": 0.031025
+        }
+      ]
+    },
+    {
+      "id": "test-05",
+      "split": "test",
+      "repeat": 0,
+      "question": "箱价很便宜，但不知道每箱实际装多少菜，能比较吗？",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 0.4856105000071693,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 0.5,
+      "retrieved": [
+        {
+          "id": "Cecc157c2bc",
+          "source": "04_供应商比较.md",
+          "section": "最低单价的局限",
+          "score": 0.534798
+        },
+        {
+          "id": "C96ee932ed4",
+          "source": "02_报价与单位.md",
+          "section": "价格口径对齐",
+          "score": 0.517413
+        },
+        {
+          "id": "Cb568cabba5",
+          "source": "05_报价单与异常.md",
+          "section": "规格与可比性",
+          "score": 0.492291
+        }
+      ]
+    },
+    {
+      "id": "test-05",
+      "split": "test",
+      "repeat": 0,
+      "question": "箱价很便宜，但不知道每箱实际装多少菜，能比较吗？",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 0.6311640000058105,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C96ee932ed4",
+          "source": "02_报价与单位.md",
+          "section": "价格口径对齐",
+          "score": 0.032522
+        },
+        {
+          "id": "Cecc157c2bc",
+          "source": "04_供应商比较.md",
+          "section": "最低单价的局限",
+          "score": 0.032522
+        },
+        {
+          "id": "C86f2fd7304",
+          "source": "00_项目范围.md",
+          "section": "文档与价格分工",
+          "score": 0.03101
+        }
+      ]
+    },
+    {
+      "id": "test-05",
+      "split": "test",
+      "repeat": 0,
+      "question": "箱价很便宜，但不知道每箱实际装多少菜，能比较吗？",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.0003040000010514632,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C96ee932ed4",
+          "source": "02_报价与单位.md",
+          "section": "价格口径对齐",
+          "score": 11.520347
+        },
+        {
+          "id": "Cecc157c2bc",
+          "source": "04_供应商比较.md",
+          "section": "最低单价的局限",
+          "score": 4.467702
+        },
+        {
+          "id": "C286d7537ed",
+          "source": "02_报价与单位.md",
+          "section": "日期与行情边界",
+          "score": 2.551741
+        }
+      ]
+    },
+    {
+      "id": "test-06",
+      "split": "test",
+      "repeat": 0,
+      "question": "两个供应商单价相同但运费不同，如何看总支出？",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 0.747530699998606,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cef58368689",
+          "source": "02_报价与单位.md",
+          "section": "费用拆分",
+          "score": 0.032787
+        },
+        {
+          "id": "Cecc157c2bc",
+          "source": "04_供应商比较.md",
+          "section": "最低单价的局限",
+          "score": 0.031514
+        },
+        {
+          "id": "Cb568cabba5",
+          "source": "05_报价单与异常.md",
+          "section": "规格与可比性",
+          "score": 0.031514
+        }
+      ]
+    },
+    {
+      "id": "test-06",
+      "split": "test",
+      "repeat": 0,
+      "question": "两个供应商单价相同但运费不同，如何看总支出？",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.00032959999225568026,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cef58368689",
+          "source": "02_报价与单位.md",
+          "section": "费用拆分",
+          "score": 26.694576
+        },
+        {
+          "id": "Cb568cabba5",
+          "source": "05_报价单与异常.md",
+          "section": "规格与可比性",
+          "score": 6.774049
+        },
+        {
+          "id": "C05ed072652",
+          "source": "01_到货验收.md",
+          "section": "批次与追溯",
+          "score": 4.296784
+        }
+      ]
+    },
+    {
+      "id": "test-06",
+      "split": "test",
+      "repeat": 0,
+      "question": "两个供应商单价相同但运费不同，如何看总支出？",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 0.5931989999953657,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cef58368689",
+          "source": "02_报价与单位.md",
+          "section": "费用拆分",
+          "score": 0.64189
+        },
+        {
+          "id": "Cecc157c2bc",
+          "source": "04_供应商比较.md",
+          "section": "最低单价的局限",
+          "score": 0.560674
+        },
+        {
+          "id": "C96ee932ed4",
+          "source": "02_报价与单位.md",
+          "section": "价格口径对齐",
+          "score": 0.478203
+        }
+      ]
+    },
+    {
+      "id": "test-07",
+      "split": "test",
+      "repeat": 0,
+      "question": "拿前天别的市场报价和今天本地报价直接比便宜合理吗？",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.0003364999865880236,
+      "hit_at_3": 0,
+      "recall_at_3": 0,
+      "mrr_at_3": 0,
+      "retrieved": [
+        {
+          "id": "C96ee932ed4",
+          "source": "02_报价与单位.md",
+          "section": "价格口径对齐",
+          "score": 6.542383
+        },
+        {
+          "id": "Caa0c7bf857",
+          "source": "05_报价单与异常.md",
+          "section": "报价单字段",
+          "score": 5.540338
+        },
+        {
+          "id": "Cb568cabba5",
+          "source": "05_报价单与异常.md",
+          "section": "规格与可比性",
+          "score": 3.885567
+        }
+      ]
+    },
+    {
+      "id": "test-07",
+      "split": "test",
+      "repeat": 0,
+      "question": "拿前天别的市场报价和今天本地报价直接比便宜合理吗？",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 0.5160659999964992,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C286d7537ed",
+          "source": "02_报价与单位.md",
+          "section": "日期与行情边界",
+          "score": 0.600348
+        },
+        {
+          "id": "Cecc157c2bc",
+          "source": "04_供应商比较.md",
+          "section": "最低单价的局限",
+          "score": 0.524694
+        },
+        {
+          "id": "Cb568cabba5",
+          "source": "05_报价单与异常.md",
+          "section": "规格与可比性",
+          "score": 0.482936
+        }
+      ]
+    },
+    {
+      "id": "test-07",
+      "split": "test",
+      "repeat": 0,
+      "question": "拿前天别的市场报价和今天本地报价直接比便宜合理吗？",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 0.5595576000050642,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 0.5,
+      "retrieved": [
+        {
+          "id": "C96ee932ed4",
+          "source": "02_报价与单位.md",
+          "section": "价格口径对齐",
+          "score": 0.032018
+        },
+        {
+          "id": "C286d7537ed",
+          "source": "02_报价与单位.md",
+          "section": "日期与行情边界",
+          "score": 0.031778
+        },
+        {
+          "id": "Cb568cabba5",
+          "source": "05_报价单与异常.md",
+          "section": "规格与可比性",
+          "score": 0.031746
+        }
+      ]
+    },
+    {
+      "id": "test-08",
+      "split": "test",
+      "repeat": 0,
+      "question": "指定那天没有价格时，可以偷偷用昨天的数吗？",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 0.5391730999981519,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cb6d3fff173",
+          "source": "00_项目范围.md",
+          "section": "最新记录不等于今天",
+          "score": 0.593431
+        },
+        {
+          "id": "C7ddbf7ff17",
+          "source": "02_报价与单位.md",
+          "section": "缺失价格与替代",
+          "score": 0.592567
+        },
+        {
+          "id": "C286d7537ed",
+          "source": "02_报价与单位.md",
+          "section": "日期与行情边界",
+          "score": 0.521117
+        }
+      ]
+    },
+    {
+      "id": "test-08",
+      "split": "test",
+      "repeat": 0,
+      "question": "指定那天没有价格时，可以偷偷用昨天的数吗？",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 0.41594949999125674,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cb6d3fff173",
+          "source": "00_项目范围.md",
+          "section": "最新记录不等于今天",
+          "score": 0.032522
+        },
+        {
+          "id": "C286d7537ed",
+          "source": "02_报价与单位.md",
+          "section": "日期与行情边界",
+          "score": 0.032266
+        },
+        {
+          "id": "C7ddbf7ff17",
+          "source": "02_报价与单位.md",
+          "section": "缺失价格与替代",
+          "score": 0.031514
+        }
+      ]
+    },
+    {
+      "id": "test-08",
+      "split": "test",
+      "repeat": 0,
+      "question": "指定那天没有价格时，可以偷偷用昨天的数吗？",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.00022029998945072293,
+      "hit_at_3": 1,
+      "recall_at_3": 0.5,
+      "mrr_at_3": 0.5,
+      "retrieved": [
+        {
+          "id": "C286d7537ed",
+          "source": "02_报价与单位.md",
+          "section": "日期与行情边界",
+          "score": 5.89214
+        },
+        {
+          "id": "Cb6d3fff173",
+          "source": "00_项目范围.md",
+          "section": "最新记录不等于今天",
+          "score": 5.058233
+        },
+        {
+          "id": "C71ef3bb834",
+          "source": "06_演示收货补充.txt",
+          "section": "06_演示收货补充",
+          "score": 4.832195
+        }
+      ]
+    },
+    {
+      "id": "test-09",
+      "split": "test",
+      "repeat": 0,
+      "question": "要40公斤可用净菜，假设损耗10%，按整公斤采购需多少？",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 0.4404177999967942,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cc34d3fd4ea",
+          "source": "03_库存与周转.md",
+          "section": "损耗率与采购量",
+          "score": 0.032787
+        },
+        {
+          "id": "Cb6291533aa",
+          "source": "03_库存与周转.md",
+          "section": "避免重复采购",
+          "score": 0.032002
+        },
+        {
+          "id": "Cedd925ae42",
+          "source": "01_到货验收.md",
+          "section": "净重与去皮",
+          "score": 0.031754
+        }
+      ]
+    },
+    {
+      "id": "test-09",
+      "split": "test",
+      "repeat": 0,
+      "question": "要40公斤可用净菜，假设损耗10%，按整公斤采购需多少？",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.0007889999978942797,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cc34d3fd4ea",
+          "source": "03_库存与周转.md",
+          "section": "损耗率与采购量",
+          "score": 31.768344
+        },
+        {
+          "id": "Cb6291533aa",
+          "source": "03_库存与周转.md",
+          "section": "避免重复采购",
+          "score": 8.542098
+        },
+        {
+          "id": "C96ee932ed4",
+          "source": "02_报价与单位.md",
+          "section": "价格口径对齐",
+          "score": 4.489953
+        }
+      ]
+    },
+    {
+      "id": "test-09",
+      "split": "test",
+      "repeat": 0,
+      "question": "要40公斤可用净菜，假设损耗10%，按整公斤采购需多少？",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 0.512623699993128,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cc34d3fd4ea",
+          "source": "03_库存与周转.md",
+          "section": "损耗率与采购量",
+          "score": 0.781046
+        },
+        {
+          "id": "Cedd925ae42",
+          "source": "01_到货验收.md",
+          "section": "净重与去皮",
+          "score": 0.598186
+        },
+        {
+          "id": "Cb6291533aa",
+          "source": "03_库存与周转.md",
+          "section": "避免重复采购",
+          "score": 0.52236
+        }
+      ]
+    },
+    {
+      "id": "test-10",
+      "split": "test",
+      "repeat": 0,
+      "question": "目标30公斤，仓内可用8公斤，还有确认在途10公斤，补多少？",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.00026790000265464187,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cb6291533aa",
+          "source": "03_库存与周转.md",
+          "section": "避免重复采购",
+          "score": 24.293135
+        },
+        {
+          "id": "Cc34d3fd4ea",
+          "source": "03_库存与周转.md",
+          "section": "损耗率与采购量",
+          "score": 9.803955
+        },
+        {
+          "id": "Cedd925ae42",
+          "source": "01_到货验收.md",
+          "section": "净重与去皮",
+          "score": 4.216217
+        }
+      ]
+    },
+    {
+      "id": "test-10",
+      "split": "test",
+      "repeat": 0,
+      "question": "目标30公斤，仓内可用8公斤，还有确认在途10公斤，补多少？",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 0.4589988999941852,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cb6291533aa",
+          "source": "03_库存与周转.md",
+          "section": "避免重复采购",
+          "score": 0.677964
+        },
+        {
+          "id": "Cc34d3fd4ea",
+          "source": "03_库存与周转.md",
+          "section": "损耗率与采购量",
+          "score": 0.521667
+        },
+        {
+          "id": "C70c02ffa7a",
+          "source": "01_到货验收.md",
+          "section": "异常与退货",
+          "score": 0.460351
+        }
+      ]
+    },
+    {
+      "id": "test-10",
+      "split": "test",
+      "repeat": 0,
+      "question": "目标30公斤，仓内可用8公斤，还有确认在途10公斤，补多少？",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 0.6394858000130625,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cb6291533aa",
+          "source": "03_库存与周转.md",
+          "section": "避免重复采购",
+          "score": 0.032787
+        },
+        {
+          "id": "Cc34d3fd4ea",
+          "source": "03_库存与周转.md",
+          "section": "损耗率与采购量",
+          "score": 0.032258
+        },
+        {
+          "id": "Cedd925ae42",
+          "source": "01_到货验收.md",
+          "section": "净重与去皮",
+          "score": 0.031258
+        }
+      ]
+    },
+    {
+      "id": "test-11",
+      "split": "test",
+      "repeat": 0,
+      "question": "便宜的原始价格能直接当成越高越好的价格分吗？",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 0.6996724999917205,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 0.5,
+      "retrieved": [
+        {
+          "id": "Cecc157c2bc",
+          "source": "04_供应商比较.md",
+          "section": "最低单价的局限",
+          "score": 0.566517
+        },
+        {
+          "id": "Cd8837bcfb8",
+          "source": "04_供应商比较.md",
+          "section": "示例评分规则",
+          "score": 0.532846
+        },
+        {
+          "id": "Cb568cabba5",
+          "source": "05_报价单与异常.md",
+          "section": "规格与可比性",
+          "score": 0.510201
+        }
+      ]
+    },
+    {
+      "id": "test-11",
+      "split": "test",
+      "repeat": 0,
+      "question": "便宜的原始价格能直接当成越高越好的价格分吗？",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 0.5774109999911161,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cd8837bcfb8",
+          "source": "04_供应商比较.md",
+          "section": "示例评分规则",
+          "score": 0.032522
+        },
+        {
+          "id": "C86f2fd7304",
+          "source": "00_项目范围.md",
+          "section": "文档与价格分工",
+          "score": 0.030835
+        },
+        {
+          "id": "C286d7537ed",
+          "source": "02_报价与单位.md",
+          "section": "日期与行情边界",
+          "score": 0.030798
+        }
+      ]
+    },
+    {
+      "id": "test-11",
+      "split": "test",
+      "repeat": 0,
+      "question": "便宜的原始价格能直接当成越高越好的价格分吗？",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.00036750000435858965,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cd8837bcfb8",
+          "source": "04_供应商比较.md",
+          "section": "示例评分规则",
+          "score": 16.871227
+        },
+        {
+          "id": "C86f2fd7304",
+          "source": "00_项目范围.md",
+          "section": "文档与价格分工",
+          "score": 7.740176
+        },
+        {
+          "id": "C286d7537ed",
+          "source": "02_报价与单位.md",
+          "section": "日期与行情边界",
+          "score": 6.304855
+        }
+      ]
+    },
+    {
+      "id": "test-12",
+      "split": "test",
+      "repeat": 0,
+      "question": "新供应商没有质量和履约记录，可以默认满分吗？",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 0.542337699997006,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C7dd9b78689",
+          "source": "04_供应商比较.md",
+          "section": "缺项处理",
+          "score": 0.032787
+        },
+        {
+          "id": "Cd8837bcfb8",
+          "source": "04_供应商比较.md",
+          "section": "示例评分规则",
+          "score": 0.032258
+        },
+        {
+          "id": "Cf6295d12f5",
+          "source": "01_到货验收.md",
+          "section": "验收记录",
+          "score": 0.031746
+        }
+      ]
+    },
+    {
+      "id": "test-12",
+      "split": "test",
+      "repeat": 0,
+      "question": "新供应商没有质量和履约记录，可以默认满分吗？",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.0002569999924162403,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C7dd9b78689",
+          "source": "04_供应商比较.md",
+          "section": "缺项处理",
+          "score": 16.483621
+        },
+        {
+          "id": "Cd8837bcfb8",
+          "source": "04_供应商比较.md",
+          "section": "示例评分规则",
+          "score": 7.2627
+        },
+        {
+          "id": "Cf6295d12f5",
+          "source": "01_到货验收.md",
+          "section": "验收记录",
+          "score": 6.109394
+        }
+      ]
+    },
+    {
+      "id": "test-12",
+      "split": "test",
+      "repeat": 0,
+      "question": "新供应商没有质量和履约记录，可以默认满分吗？",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 21.571574500005227,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C7dd9b78689",
+          "source": "04_供应商比较.md",
+          "section": "缺项处理",
+          "score": 0.74482
+        },
+        {
+          "id": "Cd8837bcfb8",
+          "source": "04_供应商比较.md",
+          "section": "示例评分规则",
+          "score": 0.545968
+        },
+        {
+          "id": "Cf6295d12f5",
+          "source": "01_到货验收.md",
+          "section": "验收记录",
+          "score": 0.48836
+        }
+      ]
+    },
+    {
+      "id": "test-13",
+      "split": "test",
+      "repeat": 0,
+      "question": "报价最低就一定采购成本最低且交付最可靠吗？",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.00027520000003278255,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cecc157c2bc",
+          "source": "04_供应商比较.md",
+          "section": "最低单价的局限",
+          "score": 10.423962
+        },
+        {
+          "id": "Cef58368689",
+          "source": "02_报价与单位.md",
+          "section": "费用拆分",
+          "score": 3.277137
+        },
+        {
+          "id": "Cc34d3fd4ea",
+          "source": "03_库存与周转.md",
+          "section": "损耗率与采购量",
+          "score": 2.759399
+        }
+      ]
+    },
+    {
+      "id": "test-13",
+      "split": "test",
+      "repeat": 0,
+      "question": "报价最低就一定采购成本最低且交付最可靠吗？",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 0.6540787999983877,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cecc157c2bc",
+          "source": "04_供应商比较.md",
+          "section": "最低单价的局限",
+          "score": 0.689177
+        },
+        {
+          "id": "Cef58368689",
+          "source": "02_报价与单位.md",
+          "section": "费用拆分",
+          "score": 0.445233
+        },
+        {
+          "id": "Cb568cabba5",
+          "source": "05_报价单与异常.md",
+          "section": "规格与可比性",
+          "score": 0.425083
+        }
+      ]
+    },
+    {
+      "id": "test-13",
+      "split": "test",
+      "repeat": 0,
+      "question": "报价最低就一定采购成本最低且交付最可靠吗？",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 0.6067428999958793,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cecc157c2bc",
+          "source": "04_供应商比较.md",
+          "section": "最低单价的局限",
+          "score": 0.032787
+        },
+        {
+          "id": "Cef58368689",
+          "source": "02_报价与单位.md",
+          "section": "费用拆分",
+          "score": 0.032258
+        },
+        {
+          "id": "C86f2fd7304",
+          "source": "00_项目范围.md",
+          "section": "文档与价格分工",
+          "score": 0.03125
+        }
+      ]
+    },
+    {
+      "id": "test-14",
+      "split": "test",
+      "repeat": 0,
+      "question": "一条报价突然特别离谱，直接改成平均价可以吗？",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 0.5762086000031559,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C7bd197cd7a",
+          "source": "05_报价单与异常.md",
+          "section": "异常值复核",
+          "score": 0.598252
+        },
+        {
+          "id": "C96ee932ed4",
+          "source": "02_报价与单位.md",
+          "section": "价格口径对齐",
+          "score": 0.491376
+        },
+        {
+          "id": "C7ddbf7ff17",
+          "source": "02_报价与单位.md",
+          "section": "缺失价格与替代",
+          "score": 0.477869
+        }
+      ]
+    },
+    {
+      "id": "test-14",
+      "split": "test",
+      "repeat": 0,
+      "question": "一条报价突然特别离谱，直接改成平均价可以吗？",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 0.4848370999970939,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C7bd197cd7a",
+          "source": "05_报价单与异常.md",
+          "section": "异常值复核",
+          "score": 0.032787
+        },
+        {
+          "id": "C96ee932ed4",
+          "source": "02_报价与单位.md",
+          "section": "价格口径对齐",
+          "score": 0.032258
+        },
+        {
+          "id": "Cb568cabba5",
+          "source": "05_报价单与异常.md",
+          "section": "规格与可比性",
+          "score": 0.031746
+        }
+      ]
+    },
+    {
+      "id": "test-14",
+      "split": "test",
+      "repeat": 0,
+      "question": "一条报价突然特别离谱，直接改成平均价可以吗？",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.0002953999937744811,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C7bd197cd7a",
+          "source": "05_报价单与异常.md",
+          "section": "异常值复核",
+          "score": 15.344519
+        },
+        {
+          "id": "C96ee932ed4",
+          "source": "02_报价与单位.md",
+          "section": "价格口径对齐",
+          "score": 2.666305
+        },
+        {
+          "id": "Cb568cabba5",
+          "source": "05_报价单与异常.md",
+          "section": "规格与可比性",
+          "score": 2.280563
+        }
+      ]
+    },
+    {
+      "id": "test-15",
+      "split": "test",
+      "repeat": 0,
+      "question": "同一种菜等级不同，能只按单价排序比较吗？",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 0.6007749999989755,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cb568cabba5",
+          "source": "05_报价单与异常.md",
+          "section": "规格与可比性",
+          "score": 0.032522
+        },
+        {
+          "id": "Cecc157c2bc",
+          "source": "04_供应商比较.md",
+          "section": "最低单价的局限",
+          "score": 0.031754
+        },
+        {
+          "id": "C286d7537ed",
+          "source": "02_报价与单位.md",
+          "section": "日期与行情边界",
+          "score": 0.031025
+        }
+      ]
+    },
+    {
+      "id": "test-15",
+      "split": "test",
+      "repeat": 0,
+      "question": "同一种菜等级不同，能只按单价排序比较吗？",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.0002199000009568408,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 0.5,
+      "retrieved": [
+        {
+          "id": "C05ed072652",
+          "source": "01_到货验收.md",
+          "section": "批次与追溯",
+          "score": 8.415128
+        },
+        {
+          "id": "Cb568cabba5",
+          "source": "05_报价单与异常.md",
+          "section": "规格与可比性",
+          "score": 6.774049
+        },
+        {
+          "id": "C286d7537ed",
+          "source": "02_报价与单位.md",
+          "section": "日期与行情边界",
+          "score": 6.706631
+        }
+      ]
+    },
+    {
+      "id": "test-15",
+      "split": "test",
+      "repeat": 0,
+      "question": "同一种菜等级不同，能只按单价排序比较吗？",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 0.5522296999988612,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cb568cabba5",
+          "source": "05_报价单与异常.md",
+          "section": "规格与可比性",
+          "score": 0.642504
+        },
+        {
+          "id": "Cecc157c2bc",
+          "source": "04_供应商比较.md",
+          "section": "最低单价的局限",
+          "score": 0.560961
+        },
+        {
+          "id": "C96ee932ed4",
+          "source": "02_报价与单位.md",
+          "section": "价格口径对齐",
+          "score": 0.522184
+        }
+      ]
+    },
+    {
+      "id": "test-16",
+      "split": "test",
+      "repeat": 0,
+      "question": "According to the PDF, what should we do if a carton label is missing?",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.0002852999896276742,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cc82c9635fd",
+          "source": "07_demo_receiving.pdf",
+          "section": "第 1 页",
+          "score": 26.177256
+        },
+        {
+          "id": "Cb568cabba5",
+          "source": "05_报价单与异常.md",
+          "section": "规格与可比性",
+          "score": 2.356276
+        }
+      ]
+    },
+    {
+      "id": "test-16",
+      "split": "test",
+      "repeat": 0,
+      "question": "According to the PDF, what should we do if a carton label is missing?",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 0.6451735000009649,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cc82c9635fd",
+          "source": "07_demo_receiving.pdf",
+          "section": "第 1 页",
+          "score": 0.646892
+        },
+        {
+          "id": "C7dd9b78689",
+          "source": "04_供应商比较.md",
+          "section": "缺项处理",
+          "score": 0.457778
+        },
+        {
+          "id": "C05ed072652",
+          "source": "01_到货验收.md",
+          "section": "批次与追溯",
+          "score": 0.438649
+        }
+      ]
+    },
+    {
+      "id": "test-16",
+      "split": "test",
+      "repeat": 0,
+      "question": "According to the PDF, what should we do if a carton label is missing?",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 0.5720140999910655,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "Cc82c9635fd",
+          "source": "07_demo_receiving.pdf",
+          "section": "第 1 页",
+          "score": 0.032787
+        },
+        {
+          "id": "Cb568cabba5",
+          "source": "05_报价单与异常.md",
+          "section": "规格与可比性",
+          "score": 0.031054
+        },
+        {
+          "id": "C7dd9b78689",
+          "source": "04_供应商比较.md",
+          "section": "缺项处理",
+          "score": 0.016129
+        }
+      ]
+    },
+    {
+      "id": "test-17",
+      "split": "test",
+      "repeat": 0,
+      "question": "这里的采购规则属于官方行业标准吗？",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 0.6023895999969682,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C7e0665fffe",
+          "source": "00_项目范围.md",
+          "section": "教学数据声明",
+          "score": 0.465881
+        },
+        {
+          "id": "Cd8837bcfb8",
+          "source": "04_供应商比较.md",
+          "section": "示例评分规则",
+          "score": 0.371626
+        },
+        {
+          "id": "Cc34d3fd4ea",
+          "source": "03_库存与周转.md",
+          "section": "损耗率与采购量",
+          "score": 0.370936
+        }
+      ]
+    },
+    {
+      "id": "test-17",
+      "split": "test",
+      "repeat": 0,
+      "question": "这里的采购规则属于官方行业标准吗？",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 0.5843822000024375,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C7e0665fffe",
+          "source": "00_项目范围.md",
+          "section": "教学数据声明",
+          "score": 0.032787
+        },
+        {
+          "id": "Cc34d3fd4ea",
+          "source": "03_库存与周转.md",
+          "section": "损耗率与采购量",
+          "score": 0.032002
+        },
+        {
+          "id": "C7820e43437",
+          "source": "03_库存与周转.md",
+          "section": "批次周转约定",
+          "score": 0.03125
+        }
+      ]
+    },
+    {
+      "id": "test-17",
+      "split": "test",
+      "repeat": 0,
+      "question": "这里的采购规则属于官方行业标准吗？",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.00020730000687763095,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C7e0665fffe",
+          "source": "00_项目范围.md",
+          "section": "教学数据声明",
+          "score": 9.275865
+        },
+        {
+          "id": "Cb6291533aa",
+          "source": "03_库存与周转.md",
+          "section": "避免重复采购",
+          "score": 6.205121
+        },
+        {
+          "id": "Cc34d3fd4ea",
+          "source": "03_库存与周转.md",
+          "section": "损耗率与采购量",
+          "score": 4.709614
+        }
+      ]
+    },
+    {
+      "id": "test-18",
+      "split": "test",
+      "repeat": 0,
+      "question": "补充收货单改了异常描述，要保留什么？",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 0.6277115999982925,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C71ef3bb834",
+          "source": "06_演示收货补充.txt",
+          "section": "06_演示收货补充",
+          "score": 0.032787
+        },
+        {
+          "id": "C70c02ffa7a",
+          "source": "01_到货验收.md",
+          "section": "异常与退货",
+          "score": 0.032258
+        },
+        {
+          "id": "C05ed072652",
+          "source": "01_到货验收.md",
+          "section": "批次与追溯",
+          "score": 0.031746
+        }
+      ]
+    },
+    {
+      "id": "test-18",
+      "split": "test",
+      "repeat": 0,
+      "question": "补充收货单改了异常描述，要保留什么？",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.0002195999986724928,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C71ef3bb834",
+          "source": "06_演示收货补充.txt",
+          "section": "06_演示收货补充",
+          "score": 11.913748
+        },
+        {
+          "id": "C70c02ffa7a",
+          "source": "01_到货验收.md",
+          "section": "异常与退货",
+          "score": 5.206324
+        },
+        {
+          "id": "C05ed072652",
+          "source": "01_到货验收.md",
+          "section": "批次与追溯",
+          "score": 4.087632
+        }
+      ]
+    },
+    {
+      "id": "test-18",
+      "split": "test",
+      "repeat": 0,
+      "question": "补充收货单改了异常描述，要保留什么？",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 0.5593234999978449,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C71ef3bb834",
+          "source": "06_演示收货补充.txt",
+          "section": "06_演示收货补充",
+          "score": 0.612845
+        },
+        {
+          "id": "C70c02ffa7a",
+          "source": "01_到货验收.md",
+          "section": "异常与退货",
+          "score": 0.60449
+        },
+        {
+          "id": "C05ed072652",
+          "source": "01_到货验收.md",
+          "section": "批次与追溯",
+          "score": 0.514013
+        }
+      ]
+    },
+    {
+      "id": "test-19",
+      "split": "test",
+      "repeat": 0,
+      "question": "某种菜缺报价时，可以用别的品种填上吗？",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.00024589999520685524,
+      "hit_at_3": 0,
+      "recall_at_3": 0,
+      "mrr_at_3": 0,
+      "retrieved": [
+        {
+          "id": "C86f2fd7304",
+          "source": "00_项目范围.md",
+          "section": "文档与价格分工",
+          "score": 7.315526
+        },
+        {
+          "id": "C05ed072652",
+          "source": "01_到货验收.md",
+          "section": "批次与追溯",
+          "score": 3.596975
+        },
+        {
+          "id": "Caa0c7bf857",
+          "source": "05_报价单与异常.md",
+          "section": "报价单字段",
+          "score": 3.076949
+        }
+      ]
+    },
+    {
+      "id": "test-19",
+      "split": "test",
+      "repeat": 0,
+      "question": "某种菜缺报价时，可以用别的品种填上吗？",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 0.4152752999943914,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C7ddbf7ff17",
+          "source": "02_报价与单位.md",
+          "section": "缺失价格与替代",
+          "score": 0.728848
+        },
+        {
+          "id": "Cb568cabba5",
+          "source": "05_报价单与异常.md",
+          "section": "规格与可比性",
+          "score": 0.603384
+        },
+        {
+          "id": "Caa0c7bf857",
+          "source": "05_报价单与异常.md",
+          "section": "报价单字段",
+          "score": 0.578463
+        }
+      ]
+    },
+    {
+      "id": "test-19",
+      "split": "test",
+      "repeat": 0,
+      "question": "某种菜缺报价时，可以用别的品种填上吗？",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 0.4892907999892486,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C7ddbf7ff17",
+          "source": "02_报价与单位.md",
+          "section": "缺失价格与替代",
+          "score": 0.032018
+        },
+        {
+          "id": "Caa0c7bf857",
+          "source": "05_报价单与异常.md",
+          "section": "报价单字段",
+          "score": 0.031746
+        },
+        {
+          "id": "C05ed072652",
+          "source": "01_到货验收.md",
+          "section": "批次与追溯",
+          "score": 0.031514
+        }
+      ]
+    },
+    {
+      "id": "test-20",
+      "split": "test",
+      "repeat": 0,
+      "question": "这个系统的静态文档能提供真实今天菜价吗？",
+      "answerable": true,
+      "method": "vector",
+      "seconds": 0.6309927000111202,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C86f2fd7304",
+          "source": "00_项目范围.md",
+          "section": "文档与价格分工",
+          "score": 0.587105
+        },
+        {
+          "id": "Cb6d3fff173",
+          "source": "00_项目范围.md",
+          "section": "最新记录不等于今天",
+          "score": 0.529054
+        },
+        {
+          "id": "C71ef3bb834",
+          "source": "06_演示收货补充.txt",
+          "section": "06_演示收货补充",
+          "score": 0.475656
+        }
+      ]
+    },
+    {
+      "id": "test-20",
+      "split": "test",
+      "repeat": 0,
+      "question": "这个系统的静态文档能提供真实今天菜价吗？",
+      "answerable": true,
+      "method": "hybrid",
+      "seconds": 0.6089505000127247,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C86f2fd7304",
+          "source": "00_项目范围.md",
+          "section": "文档与价格分工",
+          "score": 0.032787
+        },
+        {
+          "id": "C71ef3bb834",
+          "source": "06_演示收货补充.txt",
+          "section": "06_演示收货补充",
+          "score": 0.031746
+        },
+        {
+          "id": "C7e0665fffe",
+          "source": "00_项目范围.md",
+          "section": "教学数据声明",
+          "score": 0.031281
+        }
+      ]
+    },
+    {
+      "id": "test-20",
+      "split": "test",
+      "repeat": 0,
+      "question": "这个系统的静态文档能提供真实今天菜价吗？",
+      "answerable": true,
+      "method": "bm25",
+      "seconds": 0.0002854000049410388,
+      "hit_at_3": 1,
+      "recall_at_3": 1,
+      "mrr_at_3": 1,
+      "retrieved": [
+        {
+          "id": "C86f2fd7304",
+          "source": "00_项目范围.md",
+          "section": "文档与价格分工",
+          "score": 7.912969
+        },
+        {
+          "id": "C7e0665fffe",
+          "source": "00_项目范围.md",
+          "section": "教学数据声明",
+          "score": 6.806418
+        },
+        {
+          "id": "C71ef3bb834",
+          "source": "06_演示收货补充.txt",
+          "section": "06_演示收货补充",
+          "score": 6.432157
+        }
+      ]
+    },
+    {
+      "id": "test-21",
+      "split": "test",
+      "repeat": 0,
+      "question": "请准确预测2027年1月1日北京番茄批发价。",
+      "answerable": false,
+      "method": "hybrid",
+      "seconds": 0.6501427999901352,
+      "hit_at_3": null,
+      "recall_at_3": null,
+      "mrr_at_3": null,
+      "retrieved": [
+        {
+          "id": "C286d7537ed",
+          "source": "02_报价与单位.md",
+          "section": "日期与行情边界",
+          "score": 0.032258
+        },
+        {
+          "id": "C71ef3bb834",
+          "source": "06_演示收货补充.txt",
+          "section": "06_演示收货补充",
+          "score": 0.031746
+        },
+        {
+          "id": "Cb6d3fff173",
+          "source": "00_项目范围.md",
+          "section": "最新记录不等于今天",
+          "score": 0.016393
+        }
+      ]
+    },
+    {
+      "id": "test-21",
+      "split": "test",
+      "repeat": 0,
+      "question": "请准确预测2027年1月1日北京番茄批发价。",
+      "answerable": false,
+      "method": "bm25",
+      "seconds": 0.00035119999665766954,
+      "hit_at_3": null,
+      "recall_at_3": null,
+      "mrr_at_3": null,
+      "retrieved": [
+        {
+          "id": "Cc82c9635fd",
+          "source": "07_demo_receiving.pdf",
+          "section": "第 1 页",
+          "score": 3.738517
+        },
+        {
+          "id": "C286d7537ed",
+          "source": "02_报价与单位.md",
+          "section": "日期与行情边界",
+          "score": 2.199597
+        },
+        {
+          "id": "C71ef3bb834",
+          "source": "06_演示收货补充.txt",
+          "section": "06_演示收货补充",
+          "score": 1.758787
+        }
+      ]
+    },
+    {
+      "id": "test-21",
+      "split": "test",
+      "repeat": 0,
+      "question": "请准确预测2027年1月1日北京番茄批发价。",
+      "answerable": false,
+      "method": "vector",
+      "seconds": 0.48814000000129454,
+      "hit_at_3": null,
+      "recall_at_3": null,
+      "mrr_at_3": null,
+      "retrieved": [
+        {
+          "id": "Cb6d3fff173",
+          "source": "00_项目范围.md",
+          "section": "最新记录不等于今天",
+          "score": 0.399414
+        },
+        {
+          "id": "C286d7537ed",
+          "source": "02_报价与单位.md",
+          "section": "日期与行情边界",
+          "score": 0.384085
+        },
+        {
+          "id": "C71ef3bb834",
+          "source": "06_演示收货补充.txt",
+          "section": "06_演示收货补充",
+          "score": 0.374496
+        }
+      ]
+    },
+    {
+      "id": "test-22",
+      "split": "test",
+      "repeat": 0,
+      "question": "请给出某种药物治疗疾病的具体剂量。",
+      "answerable": false,
+      "method": "bm25",
+      "seconds": 0.00026119999529328197,
+      "hit_at_3": null,
+      "recall_at_3": null,
+      "mrr_at_3": null,
+      "retrieved": [
+        {
+          "id": "C86f2fd7304",
+          "source": "00_项目范围.md",
+          "section": "文档与价格分工",
+          "score": 5.226294
+        },
+        {
+          "id": "C71ef3bb834",
+          "source": "06_演示收货补充.txt",
+          "section": "06_演示收货补充",
+          "score": 4.327264
+        },
+        {
+          "id": "C7820e43437",
+          "source": "03_库存与周转.md",
+          "section": "批次周转约定",
+          "score": 2.092563
+        }
+      ]
+    },
+    {
+      "id": "test-22",
+      "split": "test",
+      "repeat": 0,
+      "question": "请给出某种药物治疗疾病的具体剂量。",
+      "answerable": false,
+      "method": "vector",
+      "seconds": 0.5685416000051191,
+      "hit_at_3": null,
+      "recall_at_3": null,
+      "mrr_at_3": null,
+      "retrieved": [
+        {
+          "id": "C96ee932ed4",
+          "source": "02_报价与单位.md",
+          "section": "价格口径对齐",
+          "score": 0.426657
+        },
+        {
+          "id": "C71ef3bb834",
+          "source": "06_演示收货补充.txt",
+          "section": "06_演示收货补充",
+          "score": 0.409975
+        },
+        {
+          "id": "Cc34d3fd4ea",
+          "source": "03_库存与周转.md",
+          "section": "损耗率与采购量",
+          "score": 0.388982
+        }
+      ]
+    },
+    {
+      "id": "test-22",
+      "split": "test",
+      "repeat": 0,
+      "question": "请给出某种药物治疗疾病的具体剂量。",
+      "answerable": false,
+      "method": "hybrid",
+      "seconds": 0.6470933999953559,
+      "hit_at_3": null,
+      "recall_at_3": null,
+      "mrr_at_3": null,
+      "retrieved": [
+        {
+          "id": "C71ef3bb834",
+          "source": "06_演示收货补充.txt",
+          "section": "06_演示收货补充",
+          "score": 0.032258
+        },
+        {
+          "id": "C86f2fd7304",
+          "source": "00_项目范围.md",
+          "section": "文档与价格分工",
+          "score": 0.030679
+        },
+        {
+          "id": "C96ee932ed4",
+          "source": "02_报价与单位.md",
+          "section": "价格口径对齐",
+          "score": 0.016393
+        }
+      ]
+    },
+    {
+      "id": "test-23",
+      "split": "test",
+      "repeat": 0,
+      "question": "请提供今天北京真实市场黄瓜报价及实时报价链接。",
+      "answerable": false,
+      "method": "vector",
+      "seconds": 0.6615612000023248,
+      "hit_at_3": null,
+      "recall_at_3": null,
+      "mrr_at_3": null,
+      "retrieved": [
+        {
+          "id": "Cb6d3fff173",
+          "source": "00_项目范围.md",
+          "section": "最新记录不等于今天",
+          "score": 0.455989
+        },
+        {
+          "id": "C86f2fd7304",
+          "source": "00_项目范围.md",
+          "section": "文档与价格分工",
+          "score": 0.447329
+        },
+        {
+          "id": "C96ee932ed4",
+          "source": "02_报价与单位.md",
+          "section": "价格口径对齐",
+          "score": 0.408053
+        }
+      ]
+    },
+    {
+      "id": "test-23",
+      "split": "test",
+      "repeat": 0,
+      "question": "请提供今天北京真实市场黄瓜报价及实时报价链接。",
+      "answerable": false,
+      "method": "hybrid",
+      "seconds": 0.4296291999926325,
+      "hit_at_3": null,
+      "recall_at_3": null,
+      "mrr_at_3": null,
+      "retrieved": [
+        {
+          "id": "Cb6d3fff173",
+          "source": "00_项目范围.md",
+          "section": "最新记录不等于今天",
+          "score": 0.032522
+        },
+        {
+          "id": "C86f2fd7304",
+          "source": "00_项目范围.md",
+          "section": "文档与价格分工",
+          "score": 0.032002
+        },
+        {
+          "id": "Caa0c7bf857",
+          "source": "05_报价单与异常.md",
+          "section": "报价单字段",
+          "score": 0.031545
+        }
+      ]
+    },
+    {
+      "id": "test-23",
+      "split": "test",
+      "repeat": 0,
+      "question": "请提供今天北京真实市场黄瓜报价及实时报价链接。",
+      "answerable": false,
+      "method": "bm25",
+      "seconds": 0.00027990000671707094,
+      "hit_at_3": null,
+      "recall_at_3": null,
+      "mrr_at_3": null,
+      "retrieved": [
+        {
+          "id": "Caa0c7bf857",
+          "source": "05_报价单与异常.md",
+          "section": "报价单字段",
+          "score": 5.540338
+        },
+        {
+          "id": "Cb6d3fff173",
+          "source": "00_项目范围.md",
+          "section": "最新记录不等于今天",
+          "score": 5.372485
+        },
+        {
+          "id": "C86f2fd7304",
+          "source": "00_项目范围.md",
+          "section": "文档与价格分工",
+          "score": 3.277137
+        }
+      ]
+    },
+    {
+      "id": "test-24",
+      "split": "test",
+      "repeat": 0,
+      "question": "VOO未来一年一定能赚多少？",
+      "answerable": false,
+      "method": "hybrid",
+      "seconds": 0.5678666000021622,
+      "hit_at_3": null,
+      "recall_at_3": null,
+      "mrr_at_3": null,
+      "retrieved": [
+        {
+          "id": "C71ef3bb834",
+          "source": "06_演示收货补充.txt",
+          "section": "06_演示收货补充",
+          "score": 0.032002
+        },
+        {
+          "id": "Cb6d3fff173",
+          "source": "00_项目范围.md",
+          "section": "最新记录不等于今天",
+          "score": 0.031754
+        },
+        {
+          "id": "C96ee932ed4",
+          "source": "02_报价与单位.md",
+          "section": "价格口径对齐",
+          "score": 0.016393
+        }
+      ]
+    },
+    {
+      "id": "test-24",
+      "split": "test",
+      "repeat": 0,
+      "question": "VOO未来一年一定能赚多少？",
+      "answerable": false,
+      "method": "bm25",
+      "seconds": 0.0001714999962132424,
+      "hit_at_3": null,
+      "recall_at_3": null,
+      "mrr_at_3": null,
+      "retrieved": [
+        {
+          "id": "C286d7537ed",
+          "source": "02_报价与单位.md",
+          "section": "日期与行情边界",
+          "score": 1.866097
+        },
+        {
+          "id": "Cb6d3fff173",
+          "source": "00_项目范围.md",
+          "section": "最新记录不等于今天",
+          "score": 1.819563
+        },
+        {
+          "id": "C71ef3bb834",
+          "source": "06_演示收货补充.txt",
+          "section": "06_演示收货补充",
+          "score": 1.492122
+        }
+      ]
+    },
+    {
+      "id": "test-24",
+      "split": "test",
+      "repeat": 0,
+      "question": "VOO未来一年一定能赚多少？",
+      "answerable": false,
+      "method": "vector",
+      "seconds": 0.47862500000337604,
+      "hit_at_3": null,
+      "recall_at_3": null,
+      "mrr_at_3": null,
+      "retrieved": [
+        {
+          "id": "C96ee932ed4",
+          "source": "02_报价与单位.md",
+          "section": "价格口径对齐",
+          "score": 0.288608
+        },
+        {
+          "id": "C71ef3bb834",
+          "source": "06_演示收货补充.txt",
+          "section": "06_演示收货补充",
+          "score": 0.286673
+        },
+        {
+          "id": "Cc34d3fd4ea",
+          "source": "03_库存与周转.md",
+          "section": "损耗率与采购量",
+          "score": 0.269909
+        }
+      ]
+    }
+  ],
+  "scope": "自编小样本检索诊断；不含答案准确率或拒答率，不能证明真实业务泛化。",
+  "latency_scope": "包含查询Embedding网络耗时；不含首次建库、加载索引与连接预热。",
+  "generation_enabled": false
+}

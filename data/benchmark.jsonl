@@ -1,0 +1,30 @@
+{"id": "dev-01", "split": "dev", "question": "净重和毛重有什么区别？", "answerable": true, "evidence": [{"source": "01_到货验收.md", "section": "净重与去皮", "quote": "净重等于毛重减去皮重"}]}
+{"id": "dev-02", "split": "dev", "question": "2.40元每500克换成每公斤多少钱？", "answerable": true, "evidence": [{"source": "02_报价与单位.md", "section": "价格口径对齐", "quote": "4.80 元/公斤"}]}
+{"id": "dev-03", "split": "dev", "question": "仓库里不同批次先处理哪一批？", "answerable": true, "evidence": [{"source": "03_库存与周转.md", "section": "批次周转约定", "quote": "先到且验收通过"}]}
+{"id": "dev-04", "split": "dev", "question": "示例供应商综合评分的权重是什么？", "answerable": true, "evidence": [{"source": "04_供应商比较.md", "section": "示例评分规则", "quote": "0.5、0.3、0.2"}]}
+{"id": "dev-05", "split": "dev", "question": "最新有记录日期是什么意思？", "answerable": true, "evidence": [{"source": "00_项目范围.md", "section": "最新记录不等于今天", "quote": "不保证当天或实时"}]}
+{"id": "dev-06", "split": "dev", "question": "报价单要记录哪些内容？", "answerable": true, "evidence": [{"source": "05_报价单与异常.md", "section": "报价单字段", "quote": "报价日期、供应商"}]}
+{"id": "test-01", "split": "test", "question": "连筐共12公斤，空筐2公斤，计价应该用多少重量？", "answerable": true, "evidence": [{"source": "01_到货验收.md", "section": "净重与去皮", "quote": "计价净重为 10 公斤"}]}
+{"id": "test-02", "split": "test", "question": "同样的菜上午下午各送一次，批次能不能合并？", "answerable": true, "evidence": [{"source": "01_到货验收.md", "section": "批次与追溯", "quote": "不同批次编号分开记录"}]}
+{"id": "test-03", "split": "test", "question": "少送货或规格不符合约定时，收货员应怎么做？", "answerable": true, "evidence": [{"source": "01_到货验收.md", "section": "异常与退货", "quote": "先标记异常"}]}
+{"id": "test-04", "split": "test", "question": "送货单上的数量和实收数量应该怎样保存？", "answerable": true, "evidence": [{"source": "01_到货验收.md", "section": "验收记录", "quote": "分开保存"}]}
+{"id": "test-05", "split": "test", "question": "箱价很便宜，但不知道每箱实际装多少菜，能比较吗？", "answerable": true, "evidence": [{"source": "02_报价与单位.md", "section": "价格口径对齐", "quote": "不知道净重时不能直接比较"}]}
+{"id": "test-06", "split": "test", "question": "两个供应商单价相同但运费不同，如何看总支出？", "answerable": true, "evidence": [{"source": "02_报价与单位.md", "section": "费用拆分", "quote": "配送费和包装费不同"}]}
+{"id": "test-07", "split": "test", "question": "拿前天别的市场报价和今天本地报价直接比便宜合理吗？", "answerable": true, "evidence": [{"source": "02_报价与单位.md", "section": "日期与行情边界", "quote": "不同日期和不同市场"}]}
+{"id": "test-08", "split": "test", "question": "指定那天没有价格时，可以偷偷用昨天的数吗？", "answerable": true, "evidence": [{"source": "02_报价与单位.md", "section": "缺失价格与替代", "quote": "返回空记录"}, {"source": "00_项目范围.md", "section": "最新记录不等于今天", "quote": "不能自动改用前一天"}]}
+{"id": "test-09", "split": "test", "question": "要40公斤可用净菜，假设损耗10%，按整公斤采购需多少？", "answerable": true, "evidence": [{"source": "03_库存与周转.md", "section": "损耗率与采购量", "quote": "采购 45 公斤"}]}
+{"id": "test-10", "split": "test", "question": "目标30公斤，仓内可用8公斤，还有确认在途10公斤，补多少？", "answerable": true, "evidence": [{"source": "03_库存与周转.md", "section": "避免重复采购", "quote": "补货 12 公斤"}]}
+{"id": "test-11", "split": "test", "question": "便宜的原始价格能直接当成越高越好的价格分吗？", "answerable": true, "evidence": [{"source": "04_供应商比较.md", "section": "示例评分规则", "quote": "先转换成"}]}
+{"id": "test-12", "split": "test", "question": "新供应商没有质量和履约记录，可以默认满分吗？", "answerable": true, "evidence": [{"source": "04_供应商比较.md", "section": "缺项处理", "quote": "不把未知分数默认为满分或零分"}]}
+{"id": "test-13", "split": "test", "question": "报价最低就一定采购成本最低且交付最可靠吗？", "answerable": true, "evidence": [{"source": "04_供应商比较.md", "section": "最低单价的局限", "quote": "不自动代表总成本更低"}]}
+{"id": "test-14", "split": "test", "question": "一条报价突然特别离谱，直接改成平均价可以吗？", "answerable": true, "evidence": [{"source": "05_报价单与异常.md", "section": "异常值复核", "quote": "不直接删除或修改成平均价"}]}
+{"id": "test-15", "split": "test", "question": "同一种菜等级不同，能只按单价排序比较吗？", "answerable": true, "evidence": [{"source": "05_报价单与异常.md", "section": "规格与可比性", "quote": "先对齐可比字段"}]}
+{"id": "test-16", "split": "test", "question": "According to the PDF, what should we do if a carton label is missing?", "answerable": true, "evidence": [{"source": "07_demo_receiving.pdf", "section": "第 1 页", "quote": "record pending review"}]}
+{"id": "test-17", "split": "test", "question": "这里的采购规则属于官方行业标准吗？", "answerable": true, "evidence": [{"source": "00_项目范围.md", "section": "教学数据声明", "quote": "不是食品行业标准"}]}
+{"id": "test-18", "split": "test", "question": "补充收货单改了异常描述，要保留什么？", "answerable": true, "evidence": [{"source": "06_演示收货补充.txt", "section": "06_演示收货补充", "quote": "原始描述及修改理由"}]}
+{"id": "test-19", "split": "test", "question": "某种菜缺报价时，可以用别的品种填上吗？", "answerable": true, "evidence": [{"source": "02_报价与单位.md", "section": "缺失价格与替代", "quote": "另一种菜或另一日"}]}
+{"id": "test-20", "split": "test", "question": "这个系统的静态文档能提供真实今天菜价吗？", "answerable": true, "evidence": [{"source": "00_项目范围.md", "section": "文档与价格分工", "quote": "不要把静态说明中的数值例子当成实时菜价"}]}
+{"id": "test-21", "split": "test", "question": "请准确预测2027年1月1日北京番茄批发价。", "answerable": false, "evidence": []}
+{"id": "test-22", "split": "test", "question": "请给出某种药物治疗疾病的具体剂量。", "answerable": false, "evidence": []}
+{"id": "test-23", "split": "test", "question": "请提供今天北京真实市场黄瓜报价及实时报价链接。", "answerable": false, "evidence": []}
+{"id": "test-24", "split": "test", "question": "VOO未来一年一定能赚多少？", "answerable": false, "evidence": []}
